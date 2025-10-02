@@ -32,7 +32,6 @@ dp.include_router(user_private_router)
 dp.include_router(user_group_router)
 dp.include_router(admin_router)
 
-
 async def on_startup(bot):
 
     run_param = False
@@ -40,7 +39,6 @@ async def on_startup(bot):
         await drop_db()
 
     await create_db()
-
 
 async def on_shutdown(bot):
     print('бот лег')
